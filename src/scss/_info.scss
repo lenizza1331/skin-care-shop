@@ -1,0 +1,77 @@
+.info {
+    display: flex;
+    justify-content: space-around;
+    margin: 70px 0;
+    text-align: right;
+}
+.info__block {
+    width: 300px;
+    height: 200px;
+    border: $brown 4px solid;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: $fmain;
+    font-size: 30px;
+    position: relative;
+
+
+    &__par1 {
+        width: 250px;
+        padding: 15px;
+
+    }
+    &__par1::before {
+        content: "";
+        background-image: url(../icons/leaf.png);
+        background-size: contain;
+        background-position: center;
+        height: 70px;
+        width: 70px;
+        display: inline-block; 
+        position: absolute;
+        right: 140px;
+        top: 45px;
+    }
+
+    &__par2 {
+        width: 150px;
+        padding: 15px;
+    }
+
+    &__par2::before {
+        content: "";
+        background-image: url(../icons/free-30-instagram-stories-icons23_122570.png);
+        background-size: contain;
+        background-position: center;
+        height: 50px;
+        width: 50px;
+        display: inline-block; 
+        position: absolute;
+        right: 142px;
+        top: 58px;
+    }
+    &__par3 {
+        width: 150px;
+        padding: 15px;
+    }
+
+    &__par3::before {
+        content: "";
+        background-image: url(../icons/leaf_thу.png);
+        background-size: contain;
+        background-position: center;
+        height: 70px;
+        width: 70px;
+        display: inline-block; 
+        position: absolute;
+        right: 140px;
+        top: 54px;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,49 @@
+.header {
+    height: 700px;
+    background-color: $light;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(../components/header/woman1.jpg);
+    background-size: auto 100% ;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    &__left {
+        width: 400px;
+        text-align: center;
+        margin-right: 50px;
+        &__title{
+            padding: 20px;
+            font-family: $fmain;
+            font-size: 60px;
+            color: $brown;
+            font-weight: 1000;
+        }
+        &__par{
+            padding: 10px;
+            font-family: $fcursive;
+            font-size: 40px;
+            color: $white;
+            text-shadow: 1px 1px 3px $brown;
+        }
+        &__btn {
+            font-size: 30px;
+            font-family: $fmain;
+            color: $white;
+            background-color: $dark;
+            padding: 10px 40px;
+            border-radius: 10px;
+            margin: 30px;
+            font-weight: 600;
+        }
+        &__btn:hover {
+            transform: scale(.95);
+            background-color: #e4928a;
+            transition: all .5s ease;
+        }
+    }
+
+    &__right {
+        width: 30vw;
+    }
+}

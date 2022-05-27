@@ -1,0 +1,29 @@
+@import "variables";
+@import "null";
+@import "bag";
+@import "categories";
+@import "footer";
+@import "header";
+@import "info";
+@import "items";
+@import "navbar";
+
+
+
+.App {
+    text-align: center;
+  }
+
+.ads {
+  display: flex;
+  justify-content: center;
+  background-color: $dark;
+}
+.ads__par {
+  text-align: center;
+  color: $white;
+  font-family: $fcursive;
+  font-size: 25px;
+  padding: 10px;
+}
+

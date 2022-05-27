@@ -1,0 +1,12 @@
+.navbar__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px ;
+    &__item{
+        font-family: $fmain;
+        font-size: 25px;
+        padding: 10px;
+        margin: 25px;
+    }
+}
