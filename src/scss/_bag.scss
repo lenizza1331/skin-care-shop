@@ -1,9 +1,19 @@
 .bag-icon {
     width: 25px;
+    position: relative;
+}
+.bag-inside {
+position: absolute;
+top: 22px;
+right: 170px;
+font-size: 14px;
+z-index: -2;
 }
 .quantity {
     display: flex;
     justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: -20px;
     button {
         font-size: 19px;
         padding:0 10px;
@@ -34,15 +44,25 @@
     opacity: 0;
     pointer-events: none;
     transition: 1s all;
+    overflow: scroll;
+
     &__content {
         padding: 20px;
         border-radius: 10px;
         background-color: $black;
-        min-height: 500px;
-        width: 50vw;
+        height: 700px;
+        width: 30vw;
         transform: scale(.5);
         transition: 1s all;
         color: white;
+        overflow: scroll;
+        h2 {
+            text-transform: uppercase;
+
+        }
+        p {
+            font-size: 16px;
+        }
     }
 }
 .modal.active{
@@ -64,10 +84,31 @@
 
 .bag-items {
     background-color: $brown;
+    p {
+        font-size: 18px;
+    }
 }
 .bag-trash {
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     justify-self: center;
     align-self: center;
+}
+.bag-info {
+    h5 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 18px;
+    }
+}
+
+.bag-checkout button {
+        font-size: 20px;
+        color: white;
+        background-color: $brown;
+        border-radius: 5px;
+        padding: 5px 20px;
+        margin-top: auto;
+        margin-bottom: 20px;
 }

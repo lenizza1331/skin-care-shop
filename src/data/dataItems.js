@@ -136,7 +136,7 @@ export const dataItems = [
         category:"SERUM" ,
     },
     {
-        id:16 ,
+        id:18 ,
         image:"serum4" ,
         price:80 ,
         name:"Laikou Vitamin C" ,
@@ -144,7 +144,7 @@ export const dataItems = [
         category:"SERUM" ,
     },
     {
-        id:16 ,
+        id:19 ,
         image:"serum3" ,
         price:80 ,
         name:"24K Gold Essense" ,
@@ -152,7 +152,7 @@ export const dataItems = [
         category:"SERUM" ,
     },
     {
-        id:16 ,
+        id:20 ,
         image:"serum5" ,
         price:80 ,
         name:"Putimi Hyaluronic Acid" ,

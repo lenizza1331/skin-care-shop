@@ -15,6 +15,7 @@ export const bagSlice = createSlice({
                 itemId: action.payload.item.id,
                 quantity: action.payload.quantity,
                 totalPrice: action.payload.quantity*action.payload.item.price,
+                totalQuantity : action.payload.quantity,
             })
         },
         removeItemFromCart :  (state, action) => {
@@ -25,6 +26,12 @@ export const bagSlice = createSlice({
     }
 })
 
+
+export const getTotalQuantity = state => {
+    return state.bag.bagItems.reduce((total, bagItems) => {
+        return bagItems.totalQuantity + total
+    }, 0)
+}
 
 export const getTotalPrice = state => {
     return state.bag.bagItems.reduce((total, bagItems) => {

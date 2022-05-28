@@ -16,7 +16,7 @@ export const Items = () => {
                 if (selectedCategory === "ALL") return true;
                 return selectedCategory === item.category;
             })
-            .map(item => <Item item={item}/>)}
+            .map(item => <Item item={item} key={item.id}/>)}
         </div>
     )
 }
