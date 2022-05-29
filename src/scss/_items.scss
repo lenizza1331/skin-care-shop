@@ -80,3 +80,32 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+@media all and (max-width: 450px){
+    .all-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .item {
+        margin: 10px;
+        width: 45vw;
+        height: 450px;
+        line-height: 120%;
+        &__name {
+            padding: 5px;
+        }
+        &__desc {
+            padding: 7px;   
+        }
+        &__image {
+            width: 45vw;
+        }
+        &__bag {
+            font-size: 15px;
+            padding: 5px 20px;
+            margin-bottom: 17px;
+        }
+        &__bag:hover {
+            font-size: 14px;
+        }
+    }
+}

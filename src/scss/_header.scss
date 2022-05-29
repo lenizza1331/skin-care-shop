@@ -78,6 +78,7 @@
         height: 70vh;
         &__left {
             width: 100vw;
+            margin-right: 0px;
             &__title {
                 font-size: 30px;
             }
@@ -91,5 +92,11 @@
         &__right {
             display: none;
         }
+    }
+}
+
+@media all and (max-width: 450px){
+    .header {
+        height: 60vh;
     }
 }

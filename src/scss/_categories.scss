@@ -62,3 +62,24 @@
         }
     }
 }
+
+
+@media all and (max-width: 450px)  {
+    .filter {
+        padding: 15px;
+        cursor: pointer;
+        &__items {
+            font-size: 15px;
+            font-weight: normal;
+            padding: 5px;
+        }
+        &__active {
+            padding: 5px;
+            font-size: 13px;
+        }
+        &__hover:hover {
+            padding: 5px;
+            font-size: 15px;
+        }
+    }
+}
