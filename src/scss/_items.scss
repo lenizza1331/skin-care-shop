@@ -59,7 +59,7 @@
     .item {
         margin: 15px;
         width: 200px;
-        height: 450px;
+        height: 470px;
         line-height: 120%;
         &__image {
             width: 200px;
@@ -67,10 +67,16 @@
         &__bag {
             font-size: 15px;
             padding: 5px 20px;
-            margin-bottom: 10px;
+            margin-bottom: 17px;
         }
         &__bag:hover {
             font-size: 14px;
         }
+    }
+}
+
+@media all and (max-width: 600px){
+    .all-items {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

@@ -30,7 +30,7 @@ export const Footer = () => {
                 <p>Terms of Service</p>
             </div>
             <div className="footer__block rights">
-                <p>Designed and Develope by Leniza Yuva©️2022
+                <p>Designed and Develope by <a className='rights-link' target="_blank" href='https://www.im-leniza.ru/eng.html'>Leniza Yuva</a> ©️2022
                 All rights reserved</p>
                 <p>The website was developed for educational purposes and is not a real offer</p>
             </div>

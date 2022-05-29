@@ -43,3 +43,22 @@
         }
     }
 }
+
+@media all and (max-width: 600px) {
+    .filter {
+        padding: 15px;
+        &__items {
+            font-size: 14px;
+            font-weight: normal;
+            padding: 5px 10px;
+        }
+        &__active {
+            padding: 2px 10px;
+            font-size: 13px;
+        }
+        &__hover:hover {
+            padding: 5px 15px;
+            font-size: 14px;
+        }
+    }
+}

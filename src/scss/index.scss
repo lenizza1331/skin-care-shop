@@ -27,3 +27,13 @@
   padding: 10px;
 }
 
+@media all and (max-width: 600px){
+  .ads__par {
+    text-align: center;
+    color: $white;
+    font-family: $fcursive;
+    font-size: 17px;
+    padding: 10px;
+  }
+}
+

@@ -109,6 +109,30 @@
     }
 }
 
-
+@media all and (max-width: 600px){
+    .info__block {
+        width: 150px;
+        height: 120px;
+        font-size: 17px;
+    }
+    .info__block__par1::before {
+        height: 35px;
+        width: 35px;
+        right: 89px;
+        top: 25px;
+    } 
+    .info__block__par2::before  {
+        height: 30px;
+        width: 30px;
+        right: 90px;
+        top: 29px;
+    }
+    .info__block__par3::before  {
+        height: 35px;
+        width: 35px;
+        right: 88px;
+        top: 26px;
+    }
+}
 
 
