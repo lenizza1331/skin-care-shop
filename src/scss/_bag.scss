@@ -3,17 +3,20 @@
     font-family: $fmain;
 }
 .bag-icon {
-    width: 25px;
     position: relative;
 }
+.bag-icon-image {
+    width: 25px;
+}
 .bag-inside {
-position: absolute;
-top: 22px;
-right: 145px;
-font-size: 14px;
-z-index: -2;
-color: black;
-font-family: $fmain;
+    position: absolute;
+    bottom: 4px;
+    left: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: -2;
+    color: black;
+    font-family: $fmain;
 }
 .quantity {
     display: flex;
@@ -64,6 +67,7 @@ font-family: $fmain;
         overflow: scroll;
         h2 {
             text-transform: uppercase;
+            font-size: 20px;
 
         }
         p {
@@ -124,11 +128,42 @@ font-family: $fmain;
     text-align: center;
     padding: 20px;
     margin: 10px;
-    opacity: 0;
+    display: none;
+    background-color: $dark;
+
     h5, p {
         font-size: 20px;
     }
 }
 .showThanks {
-    opacity: 1;
+    display: block;
+}
+
+
+
+@media all and (max-width: 1024px) {
+    .quantity {
+        button {
+            font-size: 16px;
+            padding:0 8px;
+        }
+    }
+    
+    .modal {
+        &__content {
+            width: 60vw;
+            height: 60vh;
+        }
+    }
+    
+    .bag-checkout button {
+            font-size: 20px;
+            color: white;
+            background-color: $brown;
+            border-radius: 5px;
+            padding: 5px 20px;
+            margin-top: auto;
+            margin-bottom: 20px;
+    }
+
 }

@@ -9,6 +9,7 @@ export const ChangeQuantity = ({quantity, setQuantity}) => {
         setQuantity(quantity-1);
         }
 
+
     return (
         <div className="quantity">
             <button onClick={removeQuantity}>-</button>

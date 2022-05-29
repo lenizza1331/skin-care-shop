@@ -12,25 +12,19 @@ export const Bag = () => {
     const totalQuantity = useSelector(getTotalQuantity);
     let shipping = totalPrice >= 149;
 
-    // function thankYou () {
-    //     return (
-            
-    //     )
-    // }
-
-
-
-
 
     return (
         <div className="bag">
-            <img
-                onClick={() => setModalActive(true)}
-                className="bag-icon"
-                src={bag}
-                alt="my bag"
-            />
-            <p className="bag-inside">{totalQuantity}</p>
+            <div  className="bag-icon"> 
+                <img
+                    className="bag-icon-image"
+                    onClick={() => setModalActive(true)}
+                    src={bag}
+                    alt="my bag"
+                />
+                <p className="bag-inside">{totalQuantity}</p>
+            </div>
+            
             <div
                 onClick={() => setModalActive(false)}
                 className={modalActive ? "modal activated" : "modal"}

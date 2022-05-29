@@ -50,3 +50,27 @@
 
     }
 }
+
+
+@media all and (max-width: 1024px) {
+    .all-items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .item {
+        margin: 15px;
+        width: 200px;
+        height: 450px;
+        line-height: 120%;
+        &__image {
+            width: 200px;
+        }
+        &__bag {
+            font-size: 15px;
+            padding: 5px 20px;
+            margin-bottom: 10px;
+        }
+        &__bag:hover {
+            font-size: 14px;
+        }
+    }
+}

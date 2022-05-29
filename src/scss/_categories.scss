@@ -24,3 +24,22 @@
 
     }
 }
+
+@media all and (max-width: 1024px) {
+    .filter {
+        padding: 25px;
+        &__items {
+            font-size: 18px;
+            font-weight: normal;
+            padding: 5px 15px;
+        }
+        &__active {
+            padding: 5px 15px;
+            font-size: 15px;
+        }
+        &__hover:hover {
+            padding: 5px 15px;
+            font-size: 15px;
+        }
+    }
+}
