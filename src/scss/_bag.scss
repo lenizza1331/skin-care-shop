@@ -167,3 +167,66 @@
     }
 
 }
+
+@media all and (max-width: 450px){
+    .bag-icon {
+        position: relative;
+    }
+    .bag-icon-image {
+        width: 23px;
+    }
+    
+    .modal {
+        &__content {
+            padding: 15px;
+            height: 60vh;
+            width: 80vw;
+            h2 {
+                font-size: 17px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+    .bag-items, .bag-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 13px 10px;
+        padding: 5px;
+    }
+    
+    .bag-items {
+        background-color: $brown;
+        p {
+            font-size: 13px;
+        }
+    }
+    .bag-trash {
+        height: 17px;
+        width: 17px;
+        justify-self: center;
+        align-self: center;
+    }
+    .bag-info {
+        h5 {
+            font-size: 16px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+    
+    .bag-checkout button {
+            font-size: 16px;
+            margin-bottom: 10px;
+    }
+    
+    .thanks {
+        padding: 10px;
+    
+        h5, p {
+            font-size: 15px;
+        }
+    }
+}

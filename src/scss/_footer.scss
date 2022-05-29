@@ -155,3 +155,11 @@
     }
     
 }
+
+
+@media all and (max-width: 450px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
