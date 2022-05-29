@@ -15,6 +15,7 @@ export const BagList = ({ bagItem }) => {
                     <p>${items.price*bagItem.quantity}</p>
                     <p>{bagItem.quantity} item(s)</p>
                     <img 
+                    alt="remove item"
                     onClick={()=>dispatch(removeItemFromCart({bagItemId : bagItem.id}))}
                     className="bag-trash" src={deleteBtn}/>
                 </div>

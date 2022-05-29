@@ -1,14 +1,9 @@
 import { useState } from 'react';
 import { Bag } from '../bag/Bag';
-// import {  Route, Routes } from 'react-router-dom';
-// import App from '../../App';
-// import { Items } from '../items/Items';
-// import { Footer } from '../footer/Footer';
-// import { Header } from '../header/Header';
+
 
 
 export const Navbar = () => {
-
     const [fixNav, setFixNav] = useState(false);
     function setFixNavBar () {
         if (window.scrollY >= 115) {
@@ -17,8 +12,6 @@ export const Navbar = () => {
         else setFixNav(false)
     }
     window.addEventListener('scroll', setFixNavBar)
-
-
 
 
     return (

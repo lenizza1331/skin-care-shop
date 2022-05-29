@@ -1,16 +1,39 @@
+import { motion } from "framer-motion";
+
+const blockAnimation = {
+    hidden: {
+        x: 100,
+        opacity: 0
+    },
+    visible: custom => ({
+        x: 0,
+        opacity: 1, 
+        transition: {
+            duration: 1,
+            delay: custom * 0.5,
+        }
+    }),
+    
+}
+
 
 export const Info = () => {
     return (
-        <div className="info">
-            <div className="info__block">
+        <motion.div 
+            className="info"
+            initial='hidden'
+            whileInView='visible'
+            viewport={{amount: 0.6, once: true}}
+        >
+            <motion.div custom={1} variants={blockAnimation} className="info__block">
                 <p className="info__block__par1">Natural components</p>
-            </div>
-            <div className="info__block">
+            </motion.div>
+            <motion.div custom={2} variants={blockAnimation} className="info__block">
                 <p className="info__block__par2">Cruelty free</p>
-            </div>
-            <div className="info__block">
+            </motion.div>
+            <motion.div custom={3} variants={blockAnimation} className="info__block">
                 <p className="info__block__par3">Paraben free</p>
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
     )
 }
