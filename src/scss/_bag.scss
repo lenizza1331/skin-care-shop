@@ -56,10 +56,6 @@
     overflow: scroll;
 
     &__content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
         padding: 20px;
         border-radius: 10px;
         background-color: $black;
@@ -83,6 +79,7 @@
     opacity: 1;
     pointer-events: all;
     z-index: 5;
+    overflow: scroll;
 }
 .modal__content.activated {
     transform: scale(1);
@@ -183,10 +180,11 @@
     .modal {
         &__content {
             padding: 15px;
-            height: 60vh;
+            height: 70vh;
             width: 80vw;
             h2 {
                 font-size: 17px;
+                padding: 20px;
             }
             p {
                 font-size: 14px;
