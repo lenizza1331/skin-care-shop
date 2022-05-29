@@ -1,3 +1,7 @@
+.bag {
+    color: $black;
+    font-family: $fmain;
+}
 .bag-icon {
     width: 25px;
     position: relative;
@@ -5,9 +9,11 @@
 .bag-inside {
 position: absolute;
 top: 22px;
-right: 170px;
+right: 145px;
 font-size: 14px;
 z-index: -2;
+color: black;
+font-family: $fmain;
 }
 .quantity {
     display: flex;
@@ -65,12 +71,12 @@ z-index: -2;
         }
     }
 }
-.modal.active{
+.modal.activated{
     opacity: 1;
     pointer-events: all;
     z-index: 5;
 }
-.modal__content.active {
+.modal__content.activated {
     transform: scale(1);
 }
 
@@ -111,4 +117,18 @@ z-index: -2;
         padding: 5px 20px;
         margin-top: auto;
         margin-bottom: 20px;
+}
+
+.thanks {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    opacity: 0;
+    h5, p {
+        font-size: 20px;
+    }
+}
+.showThanks {
+    opacity: 1;
 }

@@ -6,14 +6,14 @@ import  facebook from '../../icons/facebook_icon-icons.com_65926.svg';
 
 export const Footer = () => {
     return (
-        <div className="footer">
+        <div className="footer" id='contacts'>
             <div className="footer__block block-one">
                 <h3>Super Skin Shop</h3>
             </div>
             <div className="footer__block block-two">
-                <a href="#"><img className='icon' src={insta}/></a>
-                <a href="#"><img className='icon'  src={facebook}/></a>
-                <a href="#"><img className='icon' src={whatsapp}/></a>
+                <p><img alt="icons" className='icon' src={insta}/></p>
+                <p><img alt="icons" className='icon'  src={facebook}/></p>
+                <p><img alt="icons" className='icon' src={whatsapp}/></p>
 
             </div>
             <div className="footer__block block-three">
@@ -24,10 +24,10 @@ export const Footer = () => {
             </div>
             <div className="footer__block block-four">
                 <h5>Information</h5>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Refund Policy</a>
-                <a href="#">Shipping Policy</a>
-                <a href="#">Terms of Service</a>
+                <p>Privacy Policy</p>
+                <p>Refund Policy</p>
+                <p>Shipping Policy</p>
+                <p>Terms of Service</p>
             </div>
             <div className="footer__block rights">
                 <p>Designed and Develope by Leniza Yuva©️2022

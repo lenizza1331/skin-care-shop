@@ -6,17 +6,24 @@ import {BagList} from "./BagList";
 
 export const Bag = () => {
     const [modalActive, setModalActive] = useState(false);
+    const [thanks, setThanks] = useState(false);
     const bagItems = useSelector(getBagItems);
     const totalPrice = useSelector(getTotalPrice);
     const totalQuantity = useSelector(getTotalQuantity);
-    // const [shipping, setShipping] = useState(true);
+    let shipping = totalPrice >= 149;
 
-    // function setNewShip (){
-    // let newShip = totalPrice >=149;
-    // setShipping(newShip ? "free" : "15");
+    // function thankYou () {
+    //     return (
+            
+    //     )
     // }
+
+
+
+
+
     return (
-        <div>
+        <div className="bag">
             <img
                 onClick={() => setModalActive(true)}
                 className="bag-icon"
@@ -26,12 +33,12 @@ export const Bag = () => {
             <p className="bag-inside">{totalQuantity}</p>
             <div
                 onClick={() => setModalActive(false)}
-                className={modalActive ? "modal active" : "modal"}
+                className={modalActive ? "modal activated" : "modal"}
             >
                 <div
                     onClick={(e) => e.stopPropagation()}
                     className={
-                        modalActive ? "modal__content active" : "modal__content"
+                        modalActive ? "modal__content activated" : "modal__content"
                     }
                 >
                     <h2>Your Bag</h2>
@@ -46,14 +53,19 @@ export const Bag = () => {
                     <div className="bag-info">
                         <h5>Total price:</h5>
                         <h5>${totalPrice}</h5>
-                        {/* <p>Shipping: </p>
-                        <p>${()=> setNewShip}</p> */}
+                        <p>Shipping: </p>
+                        <p>{shipping ? "Free" : "$15"}</p>
                     </div>
                     <div className="bag-checkout">
-                        <button>CHECKOUT</button>
+                        <button onClick={()=>setThanks(!thanks)}>CHECKOUT</button>
+                        <div className={thanks ? "thanks showThanks" : "thanks"}>
+                            <h5>Thank you, for choosing our market!</h5>
+                            <p>Here must be form for payment, but it's not real shop</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            
         </div>
     );
 };

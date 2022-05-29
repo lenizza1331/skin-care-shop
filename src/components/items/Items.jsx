@@ -10,7 +10,7 @@ export const Items = () => {
     const selectedCategory = useSelector(getSelectedCategory);
 
     return (
-        <div className='all-items'>
+        <div className='all-items' >
             {dataItems
             .filter(item => {
                 if (selectedCategory === "ALL") return true;

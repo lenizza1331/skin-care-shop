@@ -24,7 +24,8 @@
             font-family: $fcursive;
             font-size: 40px;
             color: $white;
-            text-shadow: 1px 1px 3px $brown;
+            // text-shadow: 1px 1px 3px $brown;
+        
         }
         &__btn {
             font-size: 30px;
@@ -45,5 +46,47 @@
 
     &__right {
         width: 30vw;
+    }
+}
+
+
+@media all and (max-width: 1024px){
+    .header {
+        background-size: contain;
+        height: 30vh;
+        &__left {
+            width: 40vw;
+            &__title {
+                font-size: 30px;
+            }
+            &__par {
+                font-size: 20px;
+            }
+            &__btn {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 700px){
+    .header{
+    background-image: none;
+        height: 70vh;
+        &__left {
+            width: 100vw;
+            &__title {
+                font-size: 30px;
+            }
+            &__par {
+                font-size: 20px;
+            }
+            &__btn {
+                font-size: 16px;
+            }
+        }
+        &__right {
+            display: none;
+        }
     }
 }
