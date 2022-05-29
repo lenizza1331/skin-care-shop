@@ -22,7 +22,6 @@
         color: $brown;
         padding: 5px 20px;
         font-size: 17px;
-
     }
 }
 
@@ -79,8 +78,8 @@
             font-size: 13px;
         }
         &__hover:hover {
-            padding: 5px;
-            font-size: 15px;
+            padding: 0px;
+            font-size: 13px;
         }
     }
 }
