@@ -15,7 +15,6 @@ export const Item = ({item}) => {
             <h5 className="item__price">${item.price}</h5>
             <ChangeQuantity quantity={quantity} setQuantity={setQuantity}/>
             <button onClick={()=> dispatch(addItemToCart({item, quantity})) } className="item__bag">ADD TO BAG</button>
-
         </div>
     )
 }
