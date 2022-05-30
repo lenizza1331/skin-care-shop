@@ -1,3 +1,4 @@
+
 import { useSelector } from 'react-redux';
 import { dataItems } from '../../data/dataItems';
 import { getSelectedCategory } from '../../redux/itemsSlice';
@@ -10,30 +11,32 @@ import { motion } from "framer-motion";
 
 export const Items = () => {
     const selectedCategory = useSelector(getSelectedCategory);
+
     
-    // const itemsAnimation = {
-    //     hidden: {
+    
+    const itemsAnimation = {
+        hidden: {
             
-    //         opacity: 0
-    //     },
-    //     visible: custom =>( {
-    //         opacity: 1, 
-    //         transition: {
-    //             duration: 1,
-    //             delay: custom * 0.2,
-    //             ease: "easeInOut",
-    //             // staggerChildren: 0.5
-    //         },
-    //     }),
-    // }
+            opacity: 0
+        },
+        visible: custom =>( {
+            opacity: 1, 
+            transition: {
+                duration: 1,
+                delay: custom * 0.1,
+                ease: "easeInOut",
+                staggerChildren: 0.5
+            },
+        }),
+    }
 
 
     return (
         <motion.div 
         className='all-items'
-        // initial='hidden'
-        // whileInView='visible'
-        // viewport={{amount: 0.1 }}
+        initial='hidden'
+        whileInView='visible'
+        viewport={{amount: 0}}
         >
             {dataItems
             .filter(item => {
@@ -41,8 +44,9 @@ export const Items = () => {
                 return selectedCategory === item.category;
             })
             .map((item, index) => (<MItem 
-            // variants={itemsAnimation} 
-            // custom={index+1} 
+                
+            variants={itemsAnimation} 
+            custom={index+1} 
             item={item} 
             key={item.id}
             />))}
