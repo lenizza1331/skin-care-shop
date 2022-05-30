@@ -9,8 +9,8 @@ const blockAnimation = {
         x: 0,
         opacity: 1, 
         transition: {
-            duration: 1,
-            delay: custom * 0.5,
+            duration: .7,
+            delay: custom * 0.2,
             type: "spring",
             bounce: 0.5,
         }
