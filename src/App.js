@@ -5,6 +5,7 @@ import { Header } from './components/header/Header';
 import { Info } from './components/info/Info';
 import { Items } from './components/items/Items';
 import { Navbar } from './components/navbar/Navbar';
+import ScrollButton from './components/scrollBtn/ScrollButton';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Categories/>
         <Items/>
         <Footer/>
+        <ScrollButton/>
     </div>
   );
 }
