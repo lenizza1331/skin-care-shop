@@ -29,7 +29,7 @@ export const Item = forwardRef(({item}, ref) => {
             ref={ref}
         >
             <div className='item__image'>
-                <img className="image-item" src={`${item.image}.jpg`} alt="products"/>
+                <img onClick={()=> setOverlayClass(false)} className="image-item" src={`${item.image}.jpg`} alt="products"/>
                 <div className={overlayClass ? "overlay" : "overlay-hide"}>
                     <p className='overlay__par'>{quantity} item(s)</p>
                     <p className='overlay__par'>added to bag</p>
