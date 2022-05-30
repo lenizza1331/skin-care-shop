@@ -15,10 +15,10 @@ export const Item = forwardRef(({item}, ref) => {
 
     const [overlayClass, setOverlayClass] = useState(false);
     
-    // const newEvent = ()=>{
-    //     dispatch(addItemToCart({item, quantity}))
-    //     setOverlayClass(!overlayClass)
-    // }
+    const newEvent = ()=>{
+        dispatch(addItemToCart({item, quantity}))
+        setOverlayClass(!overlayClass)
+    }
 
 
 
@@ -41,10 +41,10 @@ export const Item = forwardRef(({item}, ref) => {
             <ChangeQuantity quantity={quantity} setQuantity={setQuantity}/>
             <button 
             className="item__bag"
-            onClick={()=> dispatch(addItemToCart({item, quantity}))} 
-            onMouseDown={()=> setOverlayClass(true)}
-            onMouseUp={()=> setOverlayClass(false)}
-            // onClick={newEvent}
+            // onClick={()=> dispatch(addItemToCart({item, quantity}))} 
+            // onMouseDown={()=> setOverlayClass(true)}
+            // onMouseUp={()=> setOverlayClass(false)}
+            onClick={newEvent}
             >ADD TO BAG</button>
         </div>
     )
