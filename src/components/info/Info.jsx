@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const blockAnimation = {
     hidden: {
-        x: 100,
+        x: 30,
         opacity: 0
     },
     visible: custom => ({
@@ -11,6 +11,8 @@ const blockAnimation = {
         transition: {
             duration: 1,
             delay: custom * 0.5,
+            type: "spring",
+            bounce: 0.5,
         }
     }),
     
