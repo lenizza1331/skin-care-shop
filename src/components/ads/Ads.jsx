@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const textAnimation = {
     hidden: {
-        x: -100,
+        x: -40,
         opacity: 0
     },
     visible: {
