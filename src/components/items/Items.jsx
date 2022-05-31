@@ -16,7 +16,6 @@ export const Items = () => {
     
     const itemsAnimation = {
         hidden: {
-            
             opacity: 0
         },
         visible: custom =>( {
@@ -35,8 +34,9 @@ export const Items = () => {
         <motion.div 
         className='all-items'
         initial='hidden'
-        whileInView='visible'
-        viewport={{amount: 0}}
+        animate='visible'
+        // whileInView='visible'
+        // viewport={{amount: 0}}
         >
             {dataItems
             .filter(item => {
