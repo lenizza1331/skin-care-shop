@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const blockAnimation = {
     hidden: {
-        x: 30,
+        x: 20,
         opacity: 0
     },
     visible: custom => ({
